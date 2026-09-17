@@ -1,0 +1,7 @@
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# Report 2 §1.2 / docs/DECISIONS.md: ≥ 80% unit-test coverage on services/.
+addopts = "--cov=app/services --cov-report=term-missing --cov-fail-under=80"
+
+[tool.ruff]
+line-length = 100
